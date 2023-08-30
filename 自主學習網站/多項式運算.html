@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>多項式函數</title>
+        <script type="text/javascript" src="多項式運算.js"></script>
+        <link rel="stylesheet" type="text/css" href="多項式運算.css">
+    </head>
+    <body>
+        <div>
+            <h1 id="main_heading">多項式函數</h1>
+            <p id="main_heading_bottom">多項式的導函數、反導函數</p>
+        </div>
+        <div id="top">
+            <a href="自主學習網站.html" target="_self" class="toplink">首頁</a>
+            <a href="排列組合.html" target="_self" class="toplink">排列組合</a>
+            <a href="解多元一次聯立方程式.html" target="_self" class="toplink">解多元一次聯立方程式</a>
+            <a href="幾何與向量.html" target="_self" class="toplink">幾何與向量</a>
+            <a href="矩陣運算.html" target="_self" class="toplink">矩陣運算</a>
+        </div>
+        <br>
+        <div id="main_div">
+            <h3 class="title">輸入多項式</h3>
+            <div class="detail">
+                <span>請輸入最高次(正整數)=</span>
+                <input type="text" id="n" >
+                <input type="button" id="comfirm" value="確認">
+                <p>請輸入多項式各項的係數</p>
+                <div>
+                    <form id="form">
+                        
+                    </form>
+                </div>
+            </div>
+            <div id="function">
+                <h3 class="title">求函數值</h3>
+                <div class="detail">
+                    <form>
+                        <span>請輸入x：</span>
+                        <input type="text" id="x_fun">
+                        <input type="button" id="cal_fun" value="開始計算">
+                    </form>
+                    <div id="solution_fun">
+    
+                    </div>
+                </div>
+            </div>
+            <div id="differential">
+                <h3 class="title">導函數</h3>
+                <p id="differential_function"></p>
+                <h4 class="subtitle">求導函數值(各點斜率)</h4>
+                <div class="detail">
+                    <form>
+                        <span>請輸入x：</span>
+                        <input type="text" id="x_dif">
+                        <input type="button" id="cal_dif" value="開始計算">
+                    </form>
+                    <div id="solution_dif">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="integral">
+                <h3 class="title">反導函數</h3>
+                <p id="integral_function"></p>
+                <h4 class="subtitle">求定積分(曲線下有向面積)</h4>
+                <div class="detail">
+                    <form>
+                        <span>請輸入下界：</span>
+                        <input type="text" id="a">
+                        <br>
+                        <span>請輸入上界：</span>
+                        <input type="text" id="b">
+                        <br>
+                        <input type="button" id="cal_int" value="開始計算">
+                    </form>
+                    <div id="solution_int">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

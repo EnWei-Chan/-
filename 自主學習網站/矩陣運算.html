@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>矩陣運算</title>
+        <script type="text/javascript" src="矩陣運算.js"></script>
+        <link rel="stylesheet" type="text/css" href="矩陣運算.css">
+    </head>
+    <body>
+        <div>
+            <h1 id="main_heading">矩陣運算</h1>
+            <p id="main_heading_bottom">矩陣加法、減法、乘法、求反方陣、求轉移矩陣與行列式</p>
+        </div>
+        <div id="top">
+            <a href="自主學習網站.html" target="_self" class="toplink">首頁</a>
+            <a href="排列組合.html" target="_self" class="toplink">排列組合</a>
+            <a href="多項式運算.html" target="_self" class="toplink">多項式函數</a>
+            <a href="解多元一次聯立方程式.html" target="_self" class="toplink">解多元一次聯立方程式</a>
+            <a href="幾何與向量.html" target="_self" class="toplink">幾何與向量</a>
+        </div>
+        <br>
+        <div id="main_div">
+            <h3 class="warning">注意：</h3>
+            <ol class="warning">
+                <li>加法或減法中，兩矩陣的行列數須一致</li>
+                <li>乘法中，矩陣A的行數須等於矩陣B的列數</li>
+                <li>求反方陣只接受2x2大小的方陣</li>
+                <li>求行列式值只接受2x2或3x3大小的方陣</li>
+                <li>若求轉移矩陣、反矩陣或行列式值，只需輸入矩陣A</li>
+            </ol>
+            <div>
+                <h3>矩陣A</h3>
+                <br>
+                <span>列數：</span>
+                <input type="button" class="adjust" value="-">
+                <span id="rowA">2</span>
+                <input type="button" class="adjust" value="+">
+            </div>  
+            <div>
+                <span>行數：</span>
+                <input type="button" class="adjust" value="-">
+                <span id="colA">2</span>
+                <input type="button" class="adjust" value="+">
+            </div> 
+            <div>
+                <form id="martix_A">
+                    <input type="text" class="valueA" value="0">
+                    <input type="text" class="valueA" value="0">
+                    <br>
+                    <input type="text" class="valueA" value="0">
+                    <input type="text" class="valueA" value="0">
+                    <br>
+                    <input type="reset" value="重置">
+                </form>
+            </div>
+            <div>
+                <h3>矩陣B</h3>
+                <br>
+                <span>列數：</span>
+                <input type="button" class="adjust" value="-">
+                <span id="rowB">2</span>
+                <input type="button" class="adjust" value="+">
+            </div>  
+            <div>
+                <span>行數：</span>
+                <input type="button" class="adjust" value="-">
+                <span id="colB">2</span>
+                <input type="button" class="adjust" value="+">
+            <div>
+                <form id="martix_B">
+                    <input type="text" class="valueB" value="0">
+                    <input type="text" class="valueB" value="0">
+                    <br>
+                    <input type="text" class="valueB" value="0">
+                    <input type="text" class="valueB" value="0">
+                    <br>
+                    <input type="reset" value="重置">
+                </form>
+            </div>
+            <div>
+                <input type="button" id="addition" value="A+B">
+                <input type="button" id="subtraction" value="A-B">
+                <input type="button" id="multiplication" value="A×B">
+                <input type="button" id="determinant" value="A的行列式值">
+                <input type="button" id="transpose" value="A的轉置矩陣">
+                <input type="button" id="reverse" value="A的反方陣">
+            </div>
+            <h3>計算結果：</p>
+            <div id="solution">
+                
+            </div>
+        </div>
+    </body>
+</html>

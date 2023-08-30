@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>排列組合</title>
+        <link rel="stylesheet" type="text/css" href="排列組合.css">
+        <script type="text/javascript" src="排列組合.js"></script>
+    </head>
+    <body>
+        <div id="main_title">
+            <h1 id="main_heading">排列組合</h1>
+            <p id="main_heading_bottom">計算階乘、組合C、排列P與重複組合H的值</p>
+        </div>
+        <div id="top">
+            <a href="自主學習網站.html" target="_self" class="toplink">首頁</a>
+            <a href="多項式運算.html" target="_self" class="toplink">多項式函數</a>
+            <a href="解多元一次聯立方程式.html" target="_self" class="toplink">解多元一次聯立方程式</a>
+            <a href="幾何與向量.html" target="_self" class="toplink">幾何與向量</a>
+            <a href="矩陣運算.html" target="_self" class="toplink">矩陣運算</a>
+        </div>
+        <br>
+        <div id="main_div">
+            <div>
+                <h3 class="title">階乘</h3>
+                <div class="detail">
+                    請輸入n階乘中的n<input type="text" id="n">
+                    <input type="button" id="f" value="計算">
+                    <p id="solution_f"></p>
+                </div>
+            </div>
+            <div id="combination">
+                <h3 class="title">組合C</h3>
+                <div class="detail">
+                    <p class="warning">注意：C m取n中，m>n</p>
+                    C<input type="text" id="Cm">取<input type="text" id="Cn">
+                    <input type="button" id="C" value="計算">
+                    <p id="solution_C"></p>
+                </div>
+            </div>
+            <div id="permutation">
+                <h3 class="title">排列P</h3>
+                <div class="detail">   
+                    <p class="warning">注意：P m取n中，m>n</p>
+                    P<input type="text" id="Pm">取<input type="text" id="Pn">
+                    <input type="button" id="P" value="計算">
+                    <p id="solution_P"></p>
+                </div>
+            </div>
+            <div id="repetitions">
+                <h3 class="title">重複組合H</h3>
+                <div class="detail">
+                    <p class="warning">注意：H m取n中，m>n</p>
+                    H<input type="text" id="Hm">取<input type="text" id="Hn">
+                    <input type="button" id="H" value="計算">
+                    <p id="solution_H"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>幾何與向量</title>
+        <script type="text/javascript" src="幾何與向量.js"></script>
+        <link rel="stylesheet" type="text/css" href="幾何與向量.css">
+    </head>
+    <body>
+        <div>
+            <h1 id="main_heading">幾何與向量</h1>
+            <p id="main_heading_bottom">平面與空間的幾何、向量問題與計算</p>
+        </div>
+        <div id="top">
+            <a href="自主學習網站.html" target="_self" class="toplink">首頁</a>
+            <a href="排列組合.html" target="_self" class="toplink">排列組合</a>
+            <a href="多項式運算.html" target="_self" class="toplink">多項式函數</a>
+            <a href="解多元一次聯立方程式.html" target="_self" class="toplink">解多元一次聯立方程式</a>
+            <a href="矩陣運算.html" target="_self" class="toplink">矩陣運算</a>
+        </div>
+        <br>
+        <div id="main_div">
+            <div>
+                <h3>過相異兩點求直線</h3>
+                <div class="detail">
+                    <form id="line">
+                        <span>點A(</span>
+                        <input type="text" class="line_point" value="0">
+                        <span>,</span>
+                        <input type="text" class="line_point" value="0">
+                        <span>)</span>
+                        <br>
+                        <span>點B(</span>
+                        <input type="text" class="line_point" value="0">
+                        <span>,</span>
+                        <input type="text" class="line_point" value="0">
+                        <span>)</span>
+                        <p class="warning">注意：AB兩點座標需相異</p>
+                        <input type="reset" value="重置">
+                        <input type="button" id="make_line" value="求過AB兩點的直線">
+                    </form>
+                    <div id="line_solution" class="solution">
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="symmetry_2d">
+                <h3>點對直線的對稱點(平面)</h3>
+                <div class="detail">
+                    <form>
+                        <span>原始點(</span>
+                        <input type="text" class="symmetryPoint_2d" value="0">
+                        <span>,</span>
+                        <input type="text" class="symmetryPoint_2d" value="0">
+                        <span>)</span>
+                        <input type="reset" value="重置">
+                    </form>
+                    <form>
+                        <span>對稱之直線</span>
+                        <input type="text" class="symmetryLine" value="0">
+                        <span>x+</span>
+                        <input type="text" class="symmetryLine" value="0">
+                        <span>y+</span>
+                        <input type="text" class="symmetryLine" value="0">
+                        <span>=0</span>
+                        <input type="reset" value="重置">
+                    </form>
+                    <p class="warning">注意：x,y係數不同為0</p>
+                    <input type="button" id="find_symmetryPoint_2d" value="求原始點對此直線的對稱點">
+                    <div id="symmetry_solution_2d" class="solution">
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="symmetry_3d">
+                <h3>點對平面的對稱點(空間)</h3>
+                <div class="detail">
+                    <form>
+                        <span>原始點(</span>
+                        <input type="text" class="symmetryPoint_3d" value="0">
+                        <span>,</span>
+                        <input type="text" class="symmetryPoint_3d" value="0">
+                        <span>,</span>
+                        <input type="text" class="symmetryPoint_3d" value="0">
+                        <span>)</span>
+                        <input type="reset" value="重置">
+                    </form>
+                    <form>
+                        <span>對稱之平面</span>
+                        <input type="text" class="symmetryPlane" value="0">
+                        <span>x+</span>
+                        <input type="text" class="symmetryPlane" value="0">
+                        <span>y+</span>
+                        <input type="text" class="symmetryPlane" value="0">
+                        <span>z+</span>
+                        <input type="text" class="symmetryPlane" value="0">
+                        <span>=0</span>
+                        <input type="reset" value="重置">
+                    </form>
+                    <p class="warning">注意：x,y,z係數不同為0</p>
+                    <input type="button" id="find_symmetryPoint_3d" value="求原始點對此平面的對稱點">
+                    <div id="symmetry_solution_3d" class="solution">
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="vector_2d">
+                <h3>平面向量</h3>
+                <div class="detail">
+                    <form>
+                        <span>向量A(</span>
+                        <input type="text" class="vector_2d" value="0">
+                        <span>,</span>
+                        <input type="text" class="vector_2d" value="0">
+                        <span>)</span>
+                        <br>
+                        <span>向量B(</span>
+                        <input type="text" class="vector_2d" value="0">
+                        <span>,</span>
+                        <input type="text" class="vector_2d" value="0">
+                        <span>)</span>
+                        <br>
+                        <input type="reset" value="重置">
+                        <input type="button" id="addition_2d" value="A+B">
+                        <input type="button" id="subtraction_2d" value="A-B">
+                        <input type="button" id="dotPorduct_2d"value="A•B">
+                    </form>
+                    <div id="vector_2d_solution" class="solution">
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="vector_3d">
+                <h3>空間向量</h3>
+                <div class="detail">
+                    <form>
+                        <span>向量A(</span>
+                        <input type="text" class="vector_3d" value="0">
+                        <span>,</span>
+                        <input type="text" class="vector_3d" value="0">
+                        <span>,</span>
+                        <input type="text" class="vector_3d" value="0">
+                        <span>)</span>
+                        <br>
+                        <span>向量B(</span>
+                        <input type="text" class="vector_3d" value="0">
+                        <span>,</span>
+                        <input type="text" class="vector_3d" value="0">
+                        <span>,</span>
+                        <input type="text" class="vector_3d" value="0">
+                        <span>)</span>
+                        <br>
+                        <input type="reset" value="重置">
+                        <input type="button" id="addition_3d" value="A+B">
+                        <input type="button" id="subtraction_3d" value="A-B">
+                        <input type="button" id="dotPorduct_3d"value="A•B">
+                        <input type="button" id="outerPorduct_3d"value="A×B">
+                    </form>
+                    <div id="vector_3d_solution" class="solution">
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="rotation">
+                <h3>對原點逆時針旋轉</h3>
+                <div class="detail">
+                    <form id="line">
+                        <span>原始點(</span>
+                        <input type="text" class="rotation_point" value="0">
+                        <span>,</span>
+                        <input type="text" class="rotation_point" value="0">
+                        <span>)</span>
+                        <br>
+                        <span>旋轉角度：</span>
+                        <input type="text" id="theta" value="0">
+                        <span>°</span>
+                        <p class="warning">注意：360°> 角度 ≧ 0°</p>
+                        <input type="reset" value="重置">
+                        <input type="button" id="rotate" value="對原點逆時針旋轉">
+                    </form>
+                    <div id="rotation_solution" class="solution">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
